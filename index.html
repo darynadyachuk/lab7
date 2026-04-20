@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>Практична робота №7</h1>
+
+    <div class="tabs"> <div role="tablist" aria-label="Ваші передбачення">
+        <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" class="button">Моє передбачення</button>
+        <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" class="button">Хочу інше передбачення</button>
+        <button role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" class="button">Хочу зовсім інше передбачення</button>
+    </div>
+
+    <div role="tabpanel" id="panel-1" aria-labelledby="tab-1" aria-controls="pannel-tab1">
+        <p>Сьогодні ти знайдеш рішення складної проблеми значно швидше ніж думаєш!</p>
+    </div>
+
+    <div role="tabpanel" id="panel-2" aria-labelledby="tab-2"  aria-controls="panel-tab2" hidden>
+        <p>Тебе очікує приплив мотивації і енергії!</p>
+    </div>
+
+    <div role="tabpanel" id="panel-3" aria-labelledby="tab-3" aria-controls="panel-3" hidden>
+        <p>Тобі просто треба поспати..</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
